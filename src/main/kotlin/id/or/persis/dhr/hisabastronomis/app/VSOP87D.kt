@@ -5,17 +5,20 @@ import id.or.persis.dhr.hisabastronomis.islamicTimes.JulianDay
 import id.or.persis.dhr.hisabastronomis.islamicTimes.MathFunction
 import id.or.persis.dhr.hisabastronomis.islamicTimes.SunDatas
 
-// Variations Seculaires des Orbites Planetetaries (VSOP) adalah model matematika yang menggambarkan
-// perubahan jangka panjang (variasi sekuler) dalam orbit planet-planet dari Merkurius hingga Neptunus (termasuk Bumi).
-// Algoritma atau teori VSOP dikembangkan oleh P. Bretagnon dan G. Francou
-// Teori VSOP sering digunakan untuk perhitungan posisi Matahari dilihat dari Bumi. Versi pertama dari
-// VSOP adalah VSOP1982, kemudian dikembangkan menjadi VSOP1987. Seri terakhir dari VSOP adalah VSOP2000.
-// VSOP87 (1987) di buat dalam beberapa versi yaitu: seri VSOP87A, VSOP87B, VSOP87C, dan VSOP87D.
-// Koding dalam bahasa Kotlin ini dibuat berdasarkan seri VSOP87D.
-// VSOP87D memuat 2425 term (komponen periodik), yaitu 1080 term untuk bujur Bumi (L), 348 term untuk lintang (B)
-// dan 997 term untuk vektor radius (R).
-// Sumber : makalah “Planetary Theories in rectangular and spherical variables: VSOP87 solution” (1988) yang ditulis
-// oleh P. Bretagnon dan G. Francou
+/*
+* Variations Seculaires des Orbites Planetetaries (VSOP) adalah model matematika yang menggambarkan
+* perubahan jangka panjang (variasi sekuler) dalam orbit planet-planet dari Merkurius hingga Neptunus (termasuk Bumi).
+* Algoritma atau teori VSOP dikembangkan oleh P. Bretagnon dan G. Francou
+* Teori VSOP sering digunakan untuk perhitungan posisi Matahari dilihat dari Bumi. Versi pertama dari
+* VSOP adalah VSOP1982, kemudian dikembangkan menjadi VSOP1987. Seri terakhir dari VSOP adalah VSOP2000.
+* VSOP87 (1987) di buat dalam beberapa versi yaitu: seri VSOP87A, VSOP87B, VSOP87C, dan VSOP87D.
+* Koding dalam bahasa Kotlin ini dibuat berdasarkan seri VSOP87D.
+* VSOP87D memuat 2425 term (komponen periodik), yaitu 1080 term untuk bujur Bumi (L), 348 term untuk lintang (B)
+* dan 997 term untuk vektor radius (R).
+* Sumber : makalah “Planetary Theories in rectangular and spherical variables: VSOP87 solution” (1988) yang ditulis
+* oleh P. Bretagnon dan G. Francou
+*/
+
 fun main() {
     val jd = JulianDay()
     val dt = DynamicalTime()

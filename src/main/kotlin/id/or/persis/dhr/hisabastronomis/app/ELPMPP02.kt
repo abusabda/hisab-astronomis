@@ -2,15 +2,17 @@ package id.or.persis.dhr.hisabastronomis.app
 
 import id.or.persis.dhr.hisabastronomis.islamicTimes.*
 
-// ELP/MPP02 yang merupakan solusi semi-analitik untuk gerakan bulan yang
-// dikembangkan oleh J. Chapront dan G. Francou pada tahun 2002
-// ELP/MPP02 merupakan penyempurnaan dari teori gerak bulan ELP2000-82B
-// ELP/MPP02 terdiri dari 35901 suku koreksi (term) yaitu: L = 13757 term B = 7948 term R = 14196 term
-// Sumber : The lunar theory ELP revisited. Introduction of new planetary perturbations by J. Chapront and G. Francou,
-// Astronomy and Astrophysics, v.404, p.735-742 (2003). https://ui.adsabs.harvard.edu/abs/2003A%26A...404..735C/abstract
-// Dalam perhitungan ELP/MPP02 ini dimasukkan koreksi aberasi pada Longitude, Latitude dan Distance yang merujuk pada
-// buku “Lunar Table and Program from 4000 B.C. to A.D. 8000” (1991) tulisan Jean Chapront dan Michelle Chapront-Touze
-// Disalin kedalam bahasa Kotlin oleh: Abu Sabda, 28 Desember 2022
+/*
+* ELP/MPP02 yang merupakan solusi semi-analitik untuk gerakan bulan yang
+* dikembangkan oleh J. Chapront dan G. Francou pada tahun 2002
+* ELP/MPP02 merupakan penyempurnaan dari teori gerak bulan ELP2000-82B
+* ELP/MPP02 terdiri dari 35901 suku koreksi (term) yaitu: L = 13757 term B = 7948 term R = 14196 term
+* Sumber : The lunar theory ELP revisited. Introduction of new planetary perturbations by J. Chapront and G. Francou,
+* Astronomy and Astrophysics, v.404, p.735-742 (2003). https://ui.adsabs.harvard.edu/abs/2003A%26A...404..735C/abstract
+* Dalam perhitungan ELP/MPP02 ini dimasukkan koreksi aberasi pada Longitude, Latitude dan Distance yang merujuk pada
+* buku “Lunar Table and Program from 4000 B.C. to A.D. 8000” (1991) tulisan Jean Chapront dan Michelle Chapront-Touze
+* Disalin kedalam bahasa Kotlin oleh: Abu Sabda, 28 Desember 2022
+*/
 
 fun main(args: Array<String>) {
 
