@@ -977,7 +977,7 @@ class MoonOtherFunc {
             m = (alphaM00d - gLon - theta0) / 360.0
 
             when (trsType) {
-                "TRANSIT" ->
+                "TRANSIT" -> m = m
                 "RISE" -> m = m - ha0.toString().toDouble() / 360.0
                 "SET" -> m = m + ha0.toString().toDouble() / 360.0
             }
