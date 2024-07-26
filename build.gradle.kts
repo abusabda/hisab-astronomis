@@ -1,9 +1,18 @@
 plugins {
     kotlin("jvm") version "2.0.0"
+    `maven-publish`
 }
 
-group = "id.or.persis.dhr"
-version = "1.0-SNAPSHOT"
+group = "com.abusabda.hisab-astronomis"
+version = "1.0.0"
+
+publishing {
+    publications {
+        create<MavenPublication>("Maven") {
+            from(components["java"])
+        }
+    }
+}
 
 repositories {
     mavenCentral()
