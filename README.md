@@ -37,7 +37,7 @@ Selain itu, terdapat juga menu tambahan, yaitu menu:
 
 # Contoh penggunaan
 
-[Lihat di sini](.\src\main\kotlin\id\or\persis\dhr\hisabastronomis\app)
+[Lihat di sini](./src/main/kotlin/id/or/persis/dhr/hisabastronomis/app)
 
 ## Konfigurasi pertama
 
