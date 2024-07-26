@@ -29,7 +29,47 @@ Dalam Hisab Astronomis terdapat lima menu utama yaitu:
 - [5] Gerhana Bulan dan Gerhana Matahari
 
 Selain itu, terdapat juga menu tambahan, yaitu menu:
+
 - [6] Phase Bulan
 - [7] Waktu Terbit, Transit, Terbenam Bulan
 - [8] Konversi Kalender Hijri Urfi-Masehi
 - [9] Konversi Julian Day.
+
+# Contoh penggunaan
+
+[Lihat di sini](.\src\main\kotlin\id\or\persis\dhr\hisabastronomis\app)
+
+## Konfigurasi pertama
+
+1. Masukkan kode ini ke settings.gradle.kts (root kotlin dsl) di blok ```repositories```
+```kotlin.kts
+  dependencyResolutionManagement {
+    repositories {
+      // contoh
+      maven {
+        url = uri("https://jitpack.io")
+      }
+    }
+  }
+```
+Jika menggunakan groovy dsl
+```groovy
+  repositories {
+    ...
+    maven { url 'https://jitpack.io' }
+  }
+```
+2. Masukkan dependensi ke build.gradle.kts (app/build.gradle.kts kotlin dsl)
+   di blok ```dependencies```
+
+```kotlin.kts
+implementation("com.github.hasanelfalakiy:hisab-astronomis:1.0.0")
+```
+jika menggunakan groovy dsl
+```groovy
+implementation 'com.github.hasanelfalakiy:hisab-astronomis:1.0.0'
+```
+## Ingin berkontribusi?
+
+> Jika Anda ingin berkontribusi, silahkan menggarpu (Fork) repositori ini, cloning ke local memory, buat perubahan, push ke github, lalu kirim Pull request ke repositori ini
+
